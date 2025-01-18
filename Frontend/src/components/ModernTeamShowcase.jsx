@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import  { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight, Linkedin, Github } from 'lucide-react'
 
@@ -34,7 +34,7 @@ const teamMembers = [
     id: 3,
     name: "Palak Chadha",
     role: "Full Stack developer",
-    image: palakImageImage,
+    image: palakImage,
     bio: "Hi, I'm Palak Chadha! I'm a 1st-year student passionate about diving deep into AI and web development. while sharpening my Full Stack skills. . 🚀",
     linkedin: "https://www.linkedin.com/in/palak-chadda-b737272b4/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     github: "https://github.com/PalakChadha27",
