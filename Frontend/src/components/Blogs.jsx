@@ -4,8 +4,15 @@ import {
   Calendar,
   HeartPulse,
   MessageSquare,
+  Frown,
+  Smile,
+  Angry,
+  Coffee,
+  Zap,
+  Moon,
   ChevronDown,
   ChevronUp,
+  Heart,
   Sun,
   LayoutDashboard,
   Home,
@@ -19,6 +26,7 @@ import {
   Utensils,
   Leaf,
   Clock,
+  Filter,
   Bookmark,
   Share2,
   Award,
@@ -128,7 +136,7 @@ const blogPosts = [
     title: "Hormonal Birth Control Options",
     excerpt:
       "An overview of different hormonal contraceptive methods and their effects on your cycle.",
-    author: "Reproductive Health Specialist Dr. Manisha Agarwal",
+    author: " Dr. Manisha Agarwal ",
     date: "2024-04-05",
     readingTime: "7 min",
     icon: <Pill className="h-12 w-12 text-red-500" />,
@@ -534,6 +542,7 @@ export function Blogs() {
               </div>
             ))}
           </div>
+
           {/* Women's Health Topics Section */}
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
             <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 dark:from-pink-400 dark:to-purple-400 mb-4">
