@@ -6,11 +6,13 @@ SheSync is an all-in-one interactive platform designed to educate, empower, and 
 To run this project in a runtime environment, you need to start both the backend and frontend servers. Here are the steps:
 
 ## **1. Navigate to the Backend directory and start the backend server:**
+
 cd Backend
 npm install
 npm run start
 
 ## **2. Navigate to the Frontend directory and start the frontend server:**
+
 cd Frontend
 npm install
 npm run dev
