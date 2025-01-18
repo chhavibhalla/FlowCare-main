@@ -7,15 +7,15 @@ To run this project in a runtime environment, you need to start both the backend
 
 ## **1. Navigate to the Backend directory and start the backend server:**
 
-## cd Backend
-## npm install
-## npm run start
+## **cd Backend**
+## **npm install**
+## **npm run start**
 
 ## **2. Navigate to the Frontend directory and start the frontend server:**
 
-## cd Frontend
-## npm install
-## npm run dev
+## **cd Frontend**
+## **npm install**
+## **npm run dev**
 
 ## This will start the backend server using Node.js and the frontend server using Vite. You can access the frontend application in your browser, typically at http://localhost:3000 or the port specified by Vite. The backend server will run on the port specified in your backend configuration, typically http://localhost:3001 or another port.
 
