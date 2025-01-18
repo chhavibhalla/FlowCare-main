@@ -1,8 +1,8 @@
 'use client'
 
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { motion } from 'framer-motion'
-import { CalendarIcon, MapPin, Search, Star, Clock, DollarSign, ChevronDown, Sun, Moon, LayoutDashboard, MessageSquare, HeartPulse, Home, GraduationCap, ShoppingBag, ActivitySquare, Stethoscope, Bot, ChevronRight } from 'lucide-react'
+import {  MapPin,  Star, Clock, DollarSign, ChevronDown, Sun, Moon, LayoutDashboard, MessageSquare, HeartPulse, Home, GraduationCap, ShoppingBag, ActivitySquare, Stethoscope, Bot, ChevronRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
 const specializations = [

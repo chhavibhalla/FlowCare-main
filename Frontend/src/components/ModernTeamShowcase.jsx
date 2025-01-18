@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, Linkedin, Github } from 'lucide-react'
 
 // Import images
 import chhaviImage from '../../public/images/chhavi.jpeg'
-import womenImage from '../../public/images/women.jpeg'
+import parwathiImage from '../../public/images/parwathi.jpeg'
 import palakImage from '../../public/images/palak.jpeg'
 import deepakImage from '../../public/images/deepak.jpeg'
 
@@ -44,7 +44,7 @@ const teamMembers = [
     id: 4,
     name: "Parwathi Jayaram",
     role: "front-end developer and game developer",
-    image: womenImage,
+    image: parwathiImage,
     bio: "I'm a game developer and programmer , who loves to learn and make different combinations of Web technologies and Ar/Vr & AI",
     linkedin: "https://www.linkedin.com/in/parwathi-jayaram-18b596326/",
     github: "https://github.com/Parwathi-Jayaram",
