@@ -2,6 +2,23 @@
 
 SheSync is an all-in-one interactive platform designed to educate, empower, and support young girls (ages 13-25) in managing their menstrual health and hygiene. Built with a mission to normalize conversations around menstruation and reduce stigma, SheSync provides a user-friendly ecosystem featuring education, tracking tools, expert guidance, and community support—all in one place.
 
+## How to Run 
+To run this project in a runtime environment, you need to start both the backend and frontend servers. Here are the steps:
+
+## **1. Navigate to the Backend directory and start the backend server:**
+cd FlowCare-main/Backend
+npm install
+npm run start
+
+## **2. Navigate to the Frontend directory and start the frontend server:**
+cd ../Frontend
+npm install
+npm run dev
+
+## This will start the backend server using Node.js and the frontend server using Vite. You can access the frontend application in your browser, typically at http://localhost:3000 or the port specified by Vite. The backend server will run on the port specified in your backend configuration, typically http://localhost:3001 or another port.
+
+
+
 
 ## 🚀 Key Features
 
