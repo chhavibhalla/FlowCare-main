@@ -40,6 +40,10 @@ import {
   Pill,
   Bath,
   Wind,
+  ThermometerSun,
+  HandHeart,
+  GlassWater,
+  CircleDot,
 } from "lucide-react";
 import { element } from "prop-types";
 import { Dashboard } from "./Dashboard";
@@ -154,6 +158,49 @@ const products = [
     rating: 4.6,
     category: "Wellness",
     isNew: true,
+  },
+  {
+    id : 11,
+    name: "Hot Water Bag",
+    brand: "SheFort",
+    price:10.99,
+    oldPrice:12.99,
+    icon: <ThermometerSun className="h-12 w-12 text-red-500" />,
+    rating:4.5,
+    category:"Pain Relief",
+    isNew: true,
+  },
+  {
+    id: 12,
+    name: "Periods Underware",
+    brand: "flowDays",
+    price: 5.99,
+    oldPrice: 8.99,
+    icon: <HandHeart className="h-12 w-12 text-pink-500" />,
+    rating:3.9,
+    category:"Tampons",
+    isNew: true
+  },
+  {
+    id: 13,
+    name: "Menstrual Disc",
+    brand: "Nirvana",
+    price: 12.99,
+    oldPrice: 15.00,
+    icon:<CircleDot className="h-12 w-12 text-teal-500" />,
+    rating: 4.0,
+    category: "Menstrual Cups",
+    isNew: true
+  },
+  {
+    id:14,
+    name: "Thero Flask",
+    brand: "Comfy",
+    price: 20.99,
+    oldPrice: 25.99,
+    icon:<GlassWater className="h-12 w-12 text-cyan-500" />,
+    rating: 4.9,
+    category: "Accessories",
   },
 ];
 

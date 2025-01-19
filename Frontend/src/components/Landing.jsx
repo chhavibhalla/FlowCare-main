@@ -363,7 +363,7 @@ export function Landing() {
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
               Success Stories
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8" >
               <SuccessStoryCard
                 name="Anubha Garg"
                 story="After struggling with irregular cycles for years, SheSync helped me understand my body better. Within 3 months, I could predict my cycle accurately!"
@@ -373,6 +373,16 @@ export function Landing() {
                 name="Riya Sharma"
                 story="The nutritional guidance on SheSync transformed my diet. My energy levels have improved, and I've noticed a significant reduction in PMS symptoms."
                 improvement="Overall Well-being"
+              />
+               <SuccessStoryCard
+                name="Aditi Jain"
+                story="The forums have made it easier for me to reach out to people who are suffering from the same symptoms as I do."
+                improvement="Mental Health"
+              />
+               <SuccessStoryCard
+                name="Manyata"
+                story="This website has helped me educate myself and be prepared for my first periods."
+                improvement="Awareness"
               />
             </div>
           </Card>
