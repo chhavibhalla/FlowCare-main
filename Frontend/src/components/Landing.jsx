@@ -58,7 +58,7 @@ export function Landing() {
 
   return (
     <div className={`flex h-screen ${darkMode ? "dark" : ""}`}>
-      /* Sidebar */}
+      {/* Sidebar */}
       <aside
         className={`bg-pink-100 dark:bg-gray-800 w-64 min-h-screen p-4 fixed transition-all duration-300 ease-in-out ${
           sidebarVisible ? "translate-x-0" : "-translate-x-full"
@@ -100,6 +100,11 @@ export function Landing() {
             onClick={() => navigate("/consultations")}
           />
           <SidebarLink
+            icon={<Bot size={20} />}
+            label="AI Chatbot"
+            onClick={() => navigate("/ChatBot")}
+          />
+          <SidebarLink
             icon={<HeartPulse size={20} />}
             label="HealthLens"
             onClick={() => navigate("/symptomsanalyzer")}
@@ -116,6 +121,7 @@ export function Landing() {
           />
         </div>
       </aside>
+
       <button
         onClick={toggleSidebar}
         className="fixed left-0 top-4 z-10 p-2 bg-pink-600 text-white rounded-r-md transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
@@ -131,22 +137,15 @@ export function Landing() {
           }`}
         />
       </button>
-      /* Main Content */}
+
+      {/* Main Content */}
       <main
         className={`flex-1 p-6 overflow-auto bg-white dark:bg-gray-900 transition-all duration-300 ease-in-out ${
           sidebarVisible ? "ml-64" : "ml-0"
         }`}
       >
-        <div className="fixed bottom-4 right-4">
-          <img
-            src="/images/chat.png"
-            onClick={() => navigate("/Chatbot")}
-            className="cursor-pointer"
-            style={{ height: "40px", width: "40px" }}
-          ></img>
-        </div>
         <div className="max-w-6xl mx-auto space-y-12">
-          {/* Header */}}
+          {/* Header */}
           <div className="flex justify-between items-center">
             <h2 className="text-3xl font-bold text-pink-600 dark:text-pink-400">
               Welcome to SheSync
@@ -162,6 +161,7 @@ export function Landing() {
               )}
             </button>
           </div>
+
           {/* Hero Section */}
           <Card>
             <div className="flex flex-col md:flex-row items-center gap-8">
@@ -186,6 +186,7 @@ export function Landing() {
               </div>
             </div>
           </Card>
+
           {/* Features Overview */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -259,6 +260,7 @@ export function Landing() {
               />
             </div>
           </Card>
+
           {/* Key Benefits Section */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -283,24 +285,20 @@ export function Landing() {
               />
             </div>
           </Card>
+
           {/* Our Mission Section */}
           <Card>
             <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
               Our Mission
             </h3>
             <p className="text-lg mb-4 text-gray-800 dark:text-gray-300">
-              SheSync’s mission is to promote period positivity, reduce stigma,
-              and empower families with education and support. We focus on early
-              detection of health issues and provide access to affordable
-              hygiene products.
+            SheSync’s mission is to promote period positivity, reduce stigma, and empower families with education and support. We focus on early detection of health issues and provide access to affordable hygiene products.
             </p>
             <p className="text-lg text-gray-800 dark:text-gray-300">
-              Our main focus is on global expansion, with plans to integrate
-              advanced AI for personalized health insights and strengthen
-              partnerships with schools, NGOs, and healthcare organizations to
-              maximize impact.
+            Our main focus is on global expansion, with plans to integrate advanced AI for personalized health insights and strengthen partnerships with schools, NGOs, and healthcare organizations to maximize impact.
             </p>
           </Card>
+
           {/* How It Works Section */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -324,6 +322,7 @@ export function Landing() {
               />
             </div>
           </Card>
+
           {/* Testimonials */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -340,6 +339,7 @@ export function Landing() {
               />
             </div>
           </Card>
+
           {/* Latest Blog Posts */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -363,12 +363,13 @@ export function Landing() {
               />
             </div>
           </Card>
+
           {/* Success Stories */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
               Success Stories
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8" >
               <SuccessStoryCard
                 name="Anubha Garg"
                 story="After struggling with irregular cycles for years, SheSync helped me understand my body better. Within 3 months, I could predict my cycle accurately!"
@@ -379,18 +380,19 @@ export function Landing() {
                 story="The nutritional guidance on SheSync transformed my diet. My energy levels have improved, and I've noticed a significant reduction in PMS symptoms."
                 improvement="Overall Well-being"
               />
-              <SuccessStoryCard
+               <SuccessStoryCard
                 name="Aditi Jain"
                 story="The forums have made it easier for me to reach out to people who are suffering from the same symptoms as I do."
                 improvement="Mental Health"
               />
-              <SuccessStoryCard
+               <SuccessStoryCard
                 name="Manyata"
                 story="This website has helped me educate myself and be prepared for my first periods."
                 improvement="Awareness"
               />
             </div>
           </Card>
+
           {/* Expert Insights */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -407,6 +409,7 @@ export function Landing() {
               />
             </div>
           </Card>
+
           {/* Community Highlights */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -427,6 +430,7 @@ export function Landing() {
               />
             </div>
           </Card>
+
           {/* FAQ Section */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -459,8 +463,9 @@ export function Landing() {
               />
             </div>
           </Card>
-          {/*App Features Showcase */}
-          <Card>
+
+         {/*App Features Showcase */}
+           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
               App Features Showcase
             </h3>
@@ -494,9 +499,10 @@ export function Landing() {
                 }
               />
             </div>
-          </Card>
-          {/* Partnerships */}
-          <Card>
+          </Card> 
+
+      {/* Partnerships */}
+           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
               Our Trusted Partners
             </h3>
@@ -511,7 +517,8 @@ export function Landing() {
               <PartnerLogo name="NutriBalance" />
               <PartnerLogo name="MindfulHer" />
             </div>
-          </Card>
+          </Card> 
+
           {/* Parent Dashboard Access */}
           <Card className="my-8">
             <div className="bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl p-6 relative overflow-hidden group">
@@ -552,6 +559,7 @@ export function Landing() {
               <div className="absolute bottom-0 left-0 -mb-4 -ml-4 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
             </div>
           </Card>
+
           {/* CTA */}
           <Card>
             <div className="text-center">
@@ -570,6 +578,7 @@ export function Landing() {
               </button>
             </div>
           </Card>
+
           {/* Team Members Card */}
           <Card className="my-8">
             <div className="bg-gray-900 rounded-xl p-6 relative overflow-hidden group">
@@ -693,6 +702,7 @@ export function Landing() {
               </div>
             </div>
           </Card>
+
           {/* Footer */}
           <footer className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -822,7 +832,9 @@ export function Landing() {
               </div>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
-              <p className="text-gray-700 dark:text-gray-400">TEAM: BYTE ME</p>
+              <p className="text-gray-700 dark:text-gray-400">
+                TEAM: BYTE ME
+              </p>
               <p className="text-gray-700 dark:text-gray-400">
                 &copy; 2024 SheSync. All rights reserved.
               </p>
