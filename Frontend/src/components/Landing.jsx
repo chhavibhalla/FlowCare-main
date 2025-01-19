@@ -144,6 +144,15 @@ export function Landing() {
           sidebarVisible ? "ml-64" : "ml-0"
         }`}
       >
+        <div className="fixed bottom-4 right-4 z-50">
+          <img
+            src="/images/chatgpt.png"
+            onClick={() => navigate("/Chatbot")}
+            className="w-16 h-16 cursor-pointer"
+            alt="Chatbot"
+          />
+        </div>
+        ;
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Header */}
           <div className="flex justify-between items-center">
@@ -292,10 +301,16 @@ export function Landing() {
               Our Mission
             </h3>
             <p className="text-lg mb-4 text-gray-800 dark:text-gray-300">
-            SheSync’s mission is to promote period positivity, reduce stigma, and empower families with education and support. We focus on early detection of health issues and provide access to affordable hygiene products.
+              SheSync’s mission is to promote period positivity, reduce stigma,
+              and empower families with education and support. We focus on early
+              detection of health issues and provide access to affordable
+              hygiene products.
             </p>
             <p className="text-lg text-gray-800 dark:text-gray-300">
-            Our main focus is on global expansion, with plans to integrate advanced AI for personalized health insights and strengthen partnerships with schools, NGOs, and healthcare organizations to maximize impact.
+              Our main focus is on global expansion, with plans to integrate
+              advanced AI for personalized health insights and strengthen
+              partnerships with schools, NGOs, and healthcare organizations to
+              maximize impact.
             </p>
           </Card>
 
@@ -369,7 +384,7 @@ export function Landing() {
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
               Success Stories
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8" >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <SuccessStoryCard
                 name="Anubha Garg"
                 story="After struggling with irregular cycles for years, SheSync helped me understand my body better. Within 3 months, I could predict my cycle accurately!"
@@ -380,12 +395,12 @@ export function Landing() {
                 story="The nutritional guidance on SheSync transformed my diet. My energy levels have improved, and I've noticed a significant reduction in PMS symptoms."
                 improvement="Overall Well-being"
               />
-               <SuccessStoryCard
+              <SuccessStoryCard
                 name="Aditi Jain"
                 story="The forums have made it easier for me to reach out to people who are suffering from the same symptoms as I do."
                 improvement="Mental Health"
               />
-               <SuccessStoryCard
+              <SuccessStoryCard
                 name="Manyata"
                 story="This website has helped me educate myself and be prepared for my first periods."
                 improvement="Awareness"
@@ -464,8 +479,8 @@ export function Landing() {
             </div>
           </Card>
 
-         {/*App Features Showcase */}
-           <Card>
+          {/*App Features Showcase */}
+          <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
               App Features Showcase
             </h3>
@@ -499,10 +514,10 @@ export function Landing() {
                 }
               />
             </div>
-          </Card> 
+          </Card>
 
-      {/* Partnerships */}
-           <Card>
+          {/* Partnerships */}
+          <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
               Our Trusted Partners
             </h3>
@@ -517,7 +532,7 @@ export function Landing() {
               <PartnerLogo name="NutriBalance" />
               <PartnerLogo name="MindfulHer" />
             </div>
-          </Card> 
+          </Card>
 
           {/* Parent Dashboard Access */}
           <Card className="my-8">
@@ -832,9 +847,7 @@ export function Landing() {
               </div>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
-              <p className="text-gray-700 dark:text-gray-400">
-                TEAM: BYTE ME
-              </p>
+              <p className="text-gray-700 dark:text-gray-400">TEAM: BYTE ME</p>
               <p className="text-gray-700 dark:text-gray-400">
                 &copy; 2024 SheSync. All rights reserved.
               </p>
