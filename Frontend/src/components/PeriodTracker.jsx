@@ -329,7 +329,7 @@ export function PeriodTracker() {
             <SidebarLink icon={<ShoppingBag size={20} />} label="Shop" onClick={() => navigate('/Ecom')} />
             <SidebarLink icon={<ActivitySquare size={20} />} label="Track Your Health" onClick={() => navigate('/tracker')} active/>
             <SidebarLink icon={<Stethoscope size={20} />} label="Expert Consultation" onClick={() => navigate('/consultations')} />
-            <SidebarLink icon={<Bot size={20} />} label="AI Chatbot" onClick={() => navigate('/ChatBot')} />
+            <SidebarLink icon={<Bot size={20} />} label="Eve" onClick={() => navigate('/ChatBot')} />
             <SidebarLink icon={<HeartPulse size={20} />} label="HealthLens" onClick={() => navigate('/symptomsanalyzer')} />
             <SidebarLink icon={<MessageSquare size={20} />} label="Forums" onClick={() => navigate('/forums')} />
             <SidebarLink icon={<ScanHeart size={20} />} label="Nutrition & Wellness" onClick={() => navigate('/')} />

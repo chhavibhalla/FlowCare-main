@@ -93,7 +93,7 @@ export function Consultations() {
           <SidebarLink icon={<ShoppingBag size={20} />} label="Shop" path="/Ecom" />
           <SidebarLink icon={<ActivitySquare size={20} />} label="Track Your Health" path="/tracker" />
           <SidebarLink icon={<Stethoscope size={20} />} label="Expert Consultation" path="/consultations" active />
-          <SidebarLink icon={<Bot size={20} />} label="AI Chatbot" path="/ChatBot" />
+          <SidebarLink icon={<Bot size={20} />} label="Eve" path="/ChatBot" />
           <SidebarLink icon={<HeartPulse size={20} />} label="HealthLens" path="/symptomsanalyzer" />
           <SidebarLink icon={<MessageSquare size={20} />} label="Forums" path="/forums" />
           <SidebarLink icon={<ScanHeart size={20} />} label="Nutrition & Wellness" onClick={() => navigate('/')} />

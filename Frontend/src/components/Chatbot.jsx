@@ -221,7 +221,7 @@ export function Chatbot() {
             <SidebarLink icon={<ShoppingBag size={20} />} label="Shop" onClick={() => navigate('/Ecom')} />
             <SidebarLink icon={<ActivitySquare size={20} />} label="Track Your Health" onClick={() => navigate('/tracker')} />
             <SidebarLink icon={<Stethoscope size={20} />} label="Expert Consultation" onClick={() => navigate('/consultations')} />
-            <SidebarLink icon={<Bot size={20} />} label="AI Chatbot" onClick={() => navigate('/ChatBot')} active/>
+            <SidebarLink icon={<Bot size={20} />} label="Eve" onClick={() => navigate('/ChatBot')} active/>
             <SidebarLink icon={<HeartPulse size={20} />} label="HealthLens" onClick={() => navigate('/symptomsanalyzer')} />
             <SidebarLink icon={<MessageSquare size={20} />} label="Forums" onClick={() => navigate('/forums')}  />
             <SidebarLink icon={<ScanHeart size={20} />} label="Nutrition&Wellness" onClick={() => navigate('/')} />
@@ -251,7 +251,7 @@ export function Chatbot() {
               <Trash2 size={20} />
             </button>
             <button
-              onClick={() => alert("Help: This is an AI chatbot designed to provide support and information for young girls aged 13-20.")}
+              onClick={() => alert("Help: This is an Eve designed to provide support and information for young girls aged 13-20.")}
               className="p-2 text-black"
               aria-label="Help"
             >

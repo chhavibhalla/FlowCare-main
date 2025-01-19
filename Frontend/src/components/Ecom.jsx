@@ -421,7 +421,7 @@ export function Ecom() {
           />
           <SidebarLink
             icon={<Bot size={20} />}
-            label="AI Chatbot"
+            label="Eve"
             onClick={() => navigate("/ChatBot")}
           />
           <SidebarLink
