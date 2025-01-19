@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
-import { LayoutDashboard, Home, MessageSquare, HeartPulse, GraduationCap, ShoppingBag, ActivitySquare, Stethoscope, Bot, ChevronRight, Bell, Calendar, Heart, Moon, Sun, Droplet, Utensils, Smile, Frown, Meh, ThermometerSun, Zap, Coffee, Dumbbell, BookOpen, AlertCircle, CheckCircle, X, ToggleLeft, ToggleRight, Lock, Unlock, AlertTriangle } from 'lucide-react';
+import { LayoutDashboard, Home, MessageSquare, HeartPulse, GraduationCap, ShoppingBag, ActivitySquare, Stethoscope, Bot, ChevronRight, Bell, Calendar, Heart, Moon, Sun, Droplet, Utensils, Smile, Frown, Meh, ThermometerSun, Zap, Coffee, Dumbbell, BookOpen, AlertCircle, CheckCircle, X, ToggleLeft, ToggleRight, Lock, Unlock, AlertTriangle, ScanHeart } from 'lucide-react';
 import axios from "axios";
 import { PrivacyForm } from './PrivacyForm';
 
@@ -359,6 +359,11 @@ export function Dashboard() {
               label="Forums"
               onClick={() => navigate("/forums")}
               active
+            />
+            <NavItem
+              icon={<ScanHeart size={20} />}
+              label="Nutrition & Wellness"
+              onClick={() => navigate("/")}
             />
           </ul>
         </nav>

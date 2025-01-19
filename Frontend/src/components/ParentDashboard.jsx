@@ -562,7 +562,6 @@ export  function ParentDashboard() {
             </div>
           </div>
         </motion.div>
-
         {/* Mood Tracking */}
         <motion.div
           variants={cardVariants}

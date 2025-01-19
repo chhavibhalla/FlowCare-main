@@ -10,6 +10,7 @@ import {
   ActivitySquare,
   Stethoscope,
   Bot,
+  ScanHeart,
   ChevronRight,
   Calendar,
   Heart,
@@ -107,6 +108,11 @@ export function Landing() {
             icon={<MessageSquare size={20} />}
             label="Forums"
             onClick={() => navigate("/forums")}
+          />
+          <SidebarLink
+            icon={<ScanHeart size={20} />}
+            label="Nutrition & Wellness"
+            onClick={() => navigate("/")}
           />
         </div>
       </aside>

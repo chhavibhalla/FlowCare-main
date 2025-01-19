@@ -13,6 +13,7 @@ import {
   ChevronDown,
   ChevronUp,
   Heart,
+  ScanHeart,
   Sun,
   LayoutDashboard,
   Home,
@@ -340,6 +341,11 @@ export function Blogs() {
             label="Forums"
             onClick={() => navigate("/forums")}
           />
+          <SidebarLink
+                      icon={<ScanHeart size={20} />}
+                      label="Nutrition & Wellness"
+                      onClick={() => navigate("/")}
+                    />
         </nav>
       </aside>
 

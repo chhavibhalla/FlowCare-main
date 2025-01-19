@@ -1,29 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import {
-  Send,
-  Moon,
-  Sun,
-  Home,
-  Trash2,
-  LayoutDashboard,
-  ActivitySquare,
-  Loader,
-  GraduationCap,
-  Bot,
-  MessageSquare,
-  HeartPulse,
-  Paperclip,
-  Smile,
-  Volume2,
-  VolumeX,
-  HelpCircle,
-  BookOpen,
-  ShoppingBag,
-  Activity,
-  Stethoscope,
-  MessageCircle,
-} from "lucide-react";
+import { Send, Moon, Sun, Home, Trash2, LayoutDashboard,ActivitySquare, Loader,GraduationCap, Bot,MessageSquare, HeartPulse, Paperclip, Smile, Volume2, VolumeX, HelpCircle, BookOpen, ShoppingBag, Activity, Stethoscope, MessageCircle, ScanHeart } from 'lucide-react';
+
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
@@ -267,55 +245,18 @@ export function Chatbot() {
       <aside className="bg-[var(--fc-bg-secondary)] w-64 p-4 border-r border-[var(--fc-accent)]">
         <nav className="mt-8">
           <div className="px-4 py-4 flex flex-col space-y-2">
-            <h1 className="text-2xl font-bold text-pink-600 dark:text-pink-400 mb-4">
-              SheSync
-            </h1>
-            <SidebarLink
-              icon={<LayoutDashboard size={20} />}
-              label="Dashboard"
-              onClick={() => navigate("/dashboard")}
-            />
-            <SidebarLink
-              icon={<Home size={20} />}
-              label="Home"
-              onClick={() => navigate("/")}
-            />
-            <SidebarLink
-              icon={<GraduationCap size={20} />}
-              label="Education"
-              onClick={() => navigate("/blogs")}
-            />
-            <SidebarLink
-              icon={<ShoppingBag size={20} />}
-              label="Shop"
-              onClick={() => navigate("/Ecom")}
-            />
-            <SidebarLink
-              icon={<ActivitySquare size={20} />}
-              label="Track Your Health"
-              onClick={() => navigate("/tracker")}
-            />
-            <SidebarLink
-              icon={<Stethoscope size={20} />}
-              label="Expert Consultation"
-              onClick={() => navigate("/consultations")}
-            />
-            <SidebarLink
-              icon={<Bot size={20} />}
-              label="AI Chatbot"
-              onClick={() => navigate("/ChatBot")}
-              active
-            />
-            <SidebarLink
-              icon={<HeartPulse size={20} />}
-              label="HealthLens"
-              onClick={() => navigate("/symptomsanalyzer")}
-            />
-            <SidebarLink
-              icon={<MessageSquare size={20} />}
-              label="Forums"
-              onClick={() => navigate("/forums")}
-            />
+
+            <h1 className="text-2xl font-bold text-pink-600 dark:text-pink-400 mb-4">SheSync</h1>
+            <SidebarLink icon={<LayoutDashboard size={20} />} label="Dashboard" onClick={() => navigate('/dashboard')} />
+            <SidebarLink icon={<Home size={20} />} label="Home" onClick={() => navigate('/')} />
+            <SidebarLink icon={<GraduationCap size={20} />} label="Education" onClick={() => navigate('/blogs')} />
+            <SidebarLink icon={<ShoppingBag size={20} />} label="Shop" onClick={() => navigate('/Ecom')} />
+            <SidebarLink icon={<ActivitySquare size={20} />} label="Track Your Health" onClick={() => navigate('/tracker')} />
+            <SidebarLink icon={<Stethoscope size={20} />} label="Expert Consultation" onClick={() => navigate('/consultations')} />
+            <SidebarLink icon={<Bot size={20} />} label="AI Chatbot" onClick={() => navigate('/ChatBot')} active/>
+            <SidebarLink icon={<HeartPulse size={20} />} label="HealthLens" onClick={() => navigate('/symptomsanalyzer')} />
+            <SidebarLink icon={<MessageSquare size={20} />} label="Forums" onClick={() => navigate('/forums')}  />
+            <SidebarLink icon={<ScanHeart size={20} />} label="Nutrition&Wellness" onClick={() => navigate('/')} />
           </div>
         </nav>
       </aside>
