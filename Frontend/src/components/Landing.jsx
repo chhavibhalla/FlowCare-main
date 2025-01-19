@@ -390,6 +390,16 @@ export function Landing() {
                 story="This website has helped me educate myself and be prepared for my first periods."
                 improvement="Awareness"
               />
+              <SuccessStoryCard
+                name="Divyanshi Sharma"
+                story="This app has helped me maintain a well balanced and nutritious diet. I have been able to feel strong even during my periods thanks to SheSync."
+                improvement="Physical Well-being"
+              />
+              <SuccessStoryCard
+                name="Swathi"
+                story="As a working woman I often find it very difficult to take care of myself but she-sync has made it very easy for me to be healthy."
+                improvement="Overall Well-being"
+              />
             </div>
           </Card>
 
