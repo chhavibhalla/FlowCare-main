@@ -24,7 +24,6 @@ const teamMembers = [
     name: "Chhavi Bhalla",
     role: "Front-End developer",
     image: chhaviImage,
-    // bio: "You dont know me, but your wife does, and the nigga who complained about me - bruh your mom loves pan cakes right?",
     bio: "An undergrad refining skills with Front-End Development in hand, who loves to design the web for a better user experience.",
     linkedin: "https://www.linkedin.com/in/chhavi-bhalla-6b7985319",
     github: "https://github.com/chhavibhalla",

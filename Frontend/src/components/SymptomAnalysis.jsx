@@ -14,6 +14,7 @@ import {
   Moon,
   ArrowLeft,
   Plus,
+  ScanHeart,
   Minus,
   Info,
   LayoutDashboard,
@@ -597,6 +598,11 @@ export function SymptomAnalysis() {
             icon={<MessageSquare size={20} />}
             label="Forums"
             onClick={() => navigate("/forums")}
+          />
+          <SidebarLink
+            icon={<ScanHeart size={20} />}
+            label="Nutrition & Wellness"
+            onClick={() => navigate("/")}
           />
         </div>
       </aside>

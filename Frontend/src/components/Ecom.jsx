@@ -16,6 +16,7 @@ import {
   ShoppingBag,
   Activity,
   Stethoscope,
+  ScanHeart,
   MessageCircle,
   Sun,
   Moon,
@@ -432,6 +433,11 @@ export function Ecom() {
             icon={<MessageSquare size={20} />}
             label="Forums"
             onClick={() => navigate("/forums")}
+          />
+          <SidebarLink
+            icon={<ScanHeart size={20} />}
+            label="Nutrition & Wellness"
+            onClick={() => navigate("/")}
           />
         </nav>
       </aside>
