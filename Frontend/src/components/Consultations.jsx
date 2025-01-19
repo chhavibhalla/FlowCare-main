@@ -2,7 +2,7 @@
 
 import  { useState } from 'react'
 import { motion } from 'framer-motion'
-import {  MapPin,  Star, Clock, DollarSign, ChevronDown, Sun, Moon, LayoutDashboard, MessageSquare, HeartPulse, Home, GraduationCap, ShoppingBag, ActivitySquare, Stethoscope, Bot, ChevronRight } from 'lucide-react'
+import {  MapPin,  Star, Clock, DollarSign, ChevronDown, Sun, Moon, LayoutDashboard, MessageSquare, HeartPulse, Home, GraduationCap, ShoppingBag, ActivitySquare, Stethoscope, Bot, ChevronRight, ScanHeart } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
 const specializations = [
@@ -96,6 +96,7 @@ export function Consultations() {
           <SidebarLink icon={<Bot size={20} />} label="AI Chatbot" path="/ChatBot" />
           <SidebarLink icon={<HeartPulse size={20} />} label="HealthLens" path="/symptomsanalyzer" />
           <SidebarLink icon={<MessageSquare size={20} />} label="Forums" path="/forums" />
+          <SidebarLink icon={<ScanHeart size={20} />} label="Nutrition & Wellness" onClick={() => navigate('/')} />
         </div>
       </aside>
 

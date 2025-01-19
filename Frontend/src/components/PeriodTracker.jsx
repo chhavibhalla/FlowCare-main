@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { format, addDays } from "date-fns";
 import { useNavigate } from "react-router-dom";
-import { Calendar, Frown, HeartPulse, Smile, Angry,MessageSquare, Coffee, Zap, Moon, ChevronDown, ChevronUp, Heart, Sun, LayoutDashboard, Home, GraduationCap, ShoppingBag, ActivitySquare, Stethoscope, Bot } from 'lucide-react';
+import { Calendar, Frown, HeartPulse, Smile, Angry,MessageSquare, Coffee, Zap, Moon, ChevronDown, ChevronUp, Heart, Sun, LayoutDashboard, Home, GraduationCap, ShoppingBag, ActivitySquare, Stethoscope, Bot, ScanHeart } from 'lucide-react';
 import axios from 'axios'; 
 
 const server_url = import.meta.env.VITE_SERVER_URL;
@@ -332,6 +332,7 @@ export function PeriodTracker() {
             <SidebarLink icon={<Bot size={20} />} label="AI Chatbot" onClick={() => navigate('/ChatBot')} />
             <SidebarLink icon={<HeartPulse size={20} />} label="HealthLens" onClick={() => navigate('/symptomsanalyzer')} />
             <SidebarLink icon={<MessageSquare size={20} />} label="Forums" onClick={() => navigate('/forums')} />
+            <SidebarLink icon={<ScanHeart size={20} />} label="Nutrition & Wellness" onClick={() => navigate('/')} />
           </div>
         </nav>
       </aside>
