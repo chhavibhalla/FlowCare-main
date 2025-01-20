@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt");
 
 const dotenv = require("dotenv");
-dotenv.config();
+dotenv.config({ path: require("path").join(__dirname, "../.env") });
 
 const MONGO_URL = process.env.MONGO_URL;
 
@@ -20,9 +20,11 @@ mongoose
   .connect(MONGO_URL)
   .then(() => {
     console.log("Successfully connected to MongoDB");
+    console.log(MONGO_URL);
   })
   .catch((error) => {
     console.error("MongoDB connection error:", error);
+    console.log(MONGO_URL);
   });
 
 app.post("/signup", async (req, res) => {
@@ -74,12 +76,10 @@ app.post("/trackerdata", async (req, res) => {
       .json({ message: "Period tracking data saved successfully" });
   } catch (error) {
     console.error("Error saving period tracking data:", error);
-    res
-      .status(500)
-      .json({
-        message: "Error saving period tracking data",
-        error: error.message,
-      });
+    res.status(500).json({
+      message: "Error saving period tracking data",
+      error: error.message,
+    });
   }
 });
 
@@ -138,12 +138,10 @@ app.get("/periodtracking/:userId", async (req, res) => {
     res.status(200).json(periodTrackingData);
   } catch (error) {
     console.error("Error fetching period tracking data:", error);
-    res
-      .status(500)
-      .json({
-        message: "Error fetching period tracking data",
-        error: error.message,
-      });
+    res.status(500).json({
+      message: "Error fetching period tracking data",
+      error: error.message,
+    });
   }
 });
 
