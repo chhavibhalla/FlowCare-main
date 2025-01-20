@@ -152,7 +152,6 @@ export function Landing() {
             alt="Chatbot"
           />
         </div>
-        ;
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Header */}
           <div className="flex justify-between items-center">
@@ -170,7 +169,6 @@ export function Landing() {
               )}
             </button>
           </div>
-
           {/* Hero Section */}
           <Card>
             <div className="flex flex-col md:flex-row items-center gap-8">
@@ -195,7 +193,6 @@ export function Landing() {
               </div>
             </div>
           </Card>
-
           {/* Features Overview */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -269,7 +266,6 @@ export function Landing() {
               />
             </div>
           </Card>
-
           {/* Key Benefits Section */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -294,7 +290,6 @@ export function Landing() {
               />
             </div>
           </Card>
-
           {/* Our Mission Section */}
           <Card>
             <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
@@ -313,7 +308,6 @@ export function Landing() {
               maximize impact.
             </p>
           </Card>
-
           {/* How It Works Section */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -337,7 +331,6 @@ export function Landing() {
               />
             </div>
           </Card>
-
           {/* Testimonials */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -354,7 +347,6 @@ export function Landing() {
               />
             </div>
           </Card>
-
           {/* Latest Blog Posts */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -378,14 +370,14 @@ export function Landing() {
               />
             </div>
           </Card>
-
           {/* Success Stories */}
-          <Card>
-            <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
+          <Card className="bg-pink-800 text-white">
+            <h3 className="text-2xl font-semibold mb-6 text-pink-700">
               Success Stories
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <SuccessStoryCard
+                className="bg-pink-800 text-white"
                 name="Anubha Garg"
                 story="After struggling with irregular cycles for years, SheSync helped me understand my body better. Within 3 months, I could predict my cycle accurately!"
                 improvement="Cycle Regularity"
@@ -417,7 +409,6 @@ export function Landing() {
               />
             </div>
           </Card>
-
           {/* Expert Insights */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -434,7 +425,6 @@ export function Landing() {
               />
             </div>
           </Card>
-
           {/* Community Highlights */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -455,7 +445,6 @@ export function Landing() {
               />
             </div>
           </Card>
-
           {/* FAQ Section */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -488,7 +477,6 @@ export function Landing() {
               />
             </div>
           </Card>
-
           {/*App Features Showcase */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -525,7 +513,6 @@ export function Landing() {
               />
             </div>
           </Card>
-
           {/* Partnerships */}
           <Card>
             <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">
@@ -543,7 +530,6 @@ export function Landing() {
               <PartnerLogo name="MindfulHer" />
             </div>
           </Card>
-
           {/* Parent Dashboard Access */}
           <Card className="my-8">
             <div className="bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl p-6 relative overflow-hidden group">
@@ -584,7 +570,6 @@ export function Landing() {
               <div className="absolute bottom-0 left-0 -mb-4 -ml-4 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
             </div>
           </Card>
-
           {/* CTA */}
           <Card>
             <div className="text-center">
@@ -603,7 +588,6 @@ export function Landing() {
               </button>
             </div>
           </Card>
-
           {/* Team Members Card */}
           <Card className="my-8">
             <div className="bg-gray-900 rounded-xl p-6 relative overflow-hidden group">
@@ -727,7 +711,6 @@ export function Landing() {
               </div>
             </div>
           </Card>
-
           {/* Footer */}
           <footer className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -982,14 +965,14 @@ const FAQItem = ({ question, answer }) => {
 
 const SuccessStoryCard = ({ name, story, improvement }) => {
   return (
-    <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
-      <h4 className="text-lg font-semibold mb-2 text-gray-300 dark:text-gray-300">
+    <div className="bg-pink-50 dark:bg-pink-50 p-6 rounded-lg border border-pink-700 dark:border-pink-700 borderw-4">
+      <h4 className="text-lg font-semibold mb-2 text-pink-600 dark:text-pink-800">
         {name}
       </h4>
-      <p className="text-gray-600 dark:text-gray-200 mb-4">"{story}"</p>
+      <p className="text-pink-400 dark:text-pink-400 mb-4">"{story}"</p>
       <div className="flex items-center">
         <Check className="text-green-500 mr-2" />
-        <span className="text-green-600 dark:text-green-400 font-medium">
+        <span className="text-green-500 dark:text-green-500 font-medium">
           {improvement}
         </span>
       </div>
