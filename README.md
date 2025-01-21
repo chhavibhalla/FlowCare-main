@@ -50,18 +50,18 @@ Follow these steps to set up and run SheSync locally:
 
 ### **1. Start the Backend Server**
 Navigate to the backend directory and execute the following commands:
-```bash
+(```bash
 cd Backend
 npm i
-node index.js
+node index.js)
 
 ### **2. Start the Frontend Server**
 
 Navigate to the frontend directory and execute the following commands:
-```bash
+(```bash
 cd Frontend
 npm i
-npm run dev
+npm run dev)
 
 	•	Frontend: Runs on http://localhost:3000 (or the port specified by Vite).
 	•	Backend: Runs on http://localhost:3001 (or the port specified in your backend configuration).
