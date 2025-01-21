@@ -102,7 +102,7 @@ export function Signup() {
       <div className="absolute top-4 left-4 flex space-x-4">
         <Link
           to="/"
-          className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
+          className="text-white-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
         >
           <Home className="w-6 h-6" />
           <span className="sr-only">Back to Home</span>
@@ -142,9 +142,9 @@ export function Signup() {
                 name="name"
                 type="text"
                 required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border 
+                className="appearance-none text-white rounded-none relative block w-full px-3 py-2 border 
                                 border-gray-300 dark:border-gray-600 
-                                text-gray-900 dark:text-white 
+                                text-white-700 dark:text-white 
                                 placeholder-gray-500 dark:placeholder-gray-400 
                                 bg-white dark:bg-gray-700 
                                 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 
@@ -164,9 +164,9 @@ export function Signup() {
                 type="email"
                 autoComplete="email"
                 required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border 
+                className="text-white appearance-none rounded-none relative block w-full px-3 py-2 border 
                                 border-gray-300 dark:border-gray-600 
-                                text-gray-900 dark:text-white 
+                                text-white-600 dark:text-white 
                                 placeholder-gray-500 dark:placeholder-gray-400 
                                 bg-white dark:bg-gray-700 
                                 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 
@@ -187,8 +187,8 @@ export function Signup() {
                 autoComplete="new-password"
                 required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border 
-                                border-gray-300 dark:border-gray-600 
-                                text-gray-900 dark:text-white 
+                                text-white border-gray-300 dark:border-gray-600 
+                                 dark:text-white 
                                 placeholder-gray-500 dark:placeholder-gray-400 
                                 bg-white dark:bg-gray-700 
                                 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 

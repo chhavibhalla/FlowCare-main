@@ -105,7 +105,7 @@ export function Login() {
       <div className="absolute top-4 left-4 flex space-x-4">
         <Link
           to="/"
-          className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
+          className="text-white-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
         >
           <Home className="w-6 h-6" />
           <span className="sr-only">Back to Home</span>

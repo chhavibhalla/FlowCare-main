@@ -289,7 +289,7 @@ export function Blogs() {
 
   return (
     <div className={`flex h-screen ${darkMode ? "dark" : ""}`}>
-      {/* Sidebar */}
+      /* Sidebar */}
       <aside className="bg-white dark:bg-gray-800 w-64 min-h-screen p-4">
         <nav className="mt-8 space-y-4">
           <h1 className="text-2xl font-bold text-pink-600 dark:text-pink-400 mb-8">
@@ -342,13 +342,13 @@ export function Blogs() {
             onClick={() => navigate("/forums")}
           />
           <SidebarLink
-                      icon={<ScanHeart size={20} />}
-                      label="Nutrition & Wellness"
-                      onClick={() => navigate("/")}
-                    />
+            icon={<ScanHeart size={20} />}
+            label="Nutrition & Wellness"
+            onClick={() => navigate("/nutrition")}
+            active
+          />
         </nav>
       </aside>
-
       {/* Main Content */}
       <main className="flex-1 p-8 overflow-auto bg-gradient-to-br from-pink-50 to-purple-50 dark:from-gray-900 dark:to-purple-900">
         <div className="max-w-6xl mx-auto space-y-8">
@@ -368,7 +368,6 @@ export function Blogs() {
               )}
             </button>
           </div>
-
           {/* Featured Article */}
           <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg transform hover:scale-105 transition-all duration-300">
             <h2 className="text-2xl font-semibold text-pink-800 dark:text-pink-300 mb-2 flex items-center">
@@ -378,7 +377,7 @@ export function Blogs() {
             <div className="flex items-center space-x-4">
               <Award className="h-16 w-16 text-pink-500" />
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                <h3 className="text-xl font-semibold text-pink dark:text-gray-200">
                   Embracing Your Cycle: A Guide to Menstrual Wellness
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mt-2">
@@ -391,21 +390,19 @@ export function Blogs() {
               Read More
             </button>
           </div>
-
-          {/* Search and Filter */}
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <div className="relative flex-grow">
+            <div className="relative flex-grow text-white">
               <input
                 type="text"
                 placeholder="Search articles..."
-                className="w-full px-4 py-2 rounded-full border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-300 dark:bg-gray-700 dark:text-white transition-all duration-300 focus:shadow-lg"
+                className="w-full px-4 py-2 text-white rounded-full border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-300 dark:bg-gray-700 dark:text-white transition-all duration-300 focus:shadow-lg"
               />
-              <Search className="absolute right-3 top-2.5 h-5 w-5 text-gray-400" />
+              <Search className="absolute right-3 top-2.5 h-5 w-5 text-white" />
             </div>
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="px-4 py-2 rounded-full border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-300 dark:bg-gray-700 dark:text-white transition-all duration-300 focus:shadow-lg"
+              className="px-4 py-2 text-white rounded-full border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-300 dark:bg-gray-700 dark:text-white transition-all duration-300 focus:shadow-lg"
             >
               <option value="All">All Categories</option>
               <option value="Health">Health</option>
@@ -418,7 +415,6 @@ export function Blogs() {
               <option value="Contraception">Contraception</option>
             </select>
           </div>
-
           {/* Trophy System */}
           <div className="bg-white dark:bg-gray-800 rounded-xl p-6 text-center shadow-lg transform hover:scale-105 transition-all duration-300">
             <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 dark:from-pink-400 dark:to-purple-400 mb-4">
@@ -497,7 +493,6 @@ export function Blogs() {
               )}
             </div>
           </div>
-
           {/* Blog Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredPosts.map((post) => (
@@ -548,7 +543,6 @@ export function Blogs() {
               </div>
             ))}
           </div>
-
           {/* Women's Health Topics Section */}
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
             <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 dark:from-pink-400 dark:to-purple-400 mb-4">
@@ -615,7 +609,6 @@ export function Blogs() {
               ))}
             </div>
           </div>
-
           {/* Quiz Section */}
           {allSectionsRead && (
             <div className="mt-8 bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
@@ -631,7 +624,6 @@ export function Blogs() {
           )}
         </div>
       </main>
-
       {/* Modal for selected post */}
       {selectedPost && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">

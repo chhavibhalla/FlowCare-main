@@ -169,7 +169,7 @@ export function SymptomAnalysis() {
                 <motion.button
                   key={symptom}
                   onClick={() => handleSymptomToggle(symptom)}
-                  className={`p-3 rounded-md text-sm transition-colors ${
+                  className={`p-3 rounded-md text-white text-sm transition-colors ${
                     selectedSymptoms.includes(symptom)
                       ? "bg-pink-600 text-white shadow-lg"
                       : "bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-600"
@@ -187,7 +187,7 @@ export function SymptomAnalysis() {
                 value={customSymptom}
                 onChange={(e) => setCustomSymptom(e.target.value)}
                 placeholder="Add custom symptom"
-                className="flex-grow p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+                className="flex-grow p-2 border text-white border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
               />
               <motion.button
                 onClick={handleAddCustomSymptom}
@@ -230,7 +230,7 @@ export function SymptomAnalysis() {
                 <motion.button
                   key={level}
                   onClick={() => setIntensity(level)}
-                  className={`w-full p-4 rounded-md text-sm transition-colors ${
+                  className={`w-full p-4 rounded-md text-sm text-white transition-colors ${
                     intensity === level
                       ? "bg-pink-600 text-white shadow-lg"
                       : "bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-600"
@@ -290,7 +290,7 @@ export function SymptomAnalysis() {
                 <motion.button
                   key={period}
                   onClick={() => setDuration(period)}
-                  className={`w-full p-4 rounded-md text-sm transition-colors ${
+                  className={`w-full p-4 rounded-md text-sm text-white transition-colors ${
                     duration === period
                       ? "bg-pink-600 text-white shadow-lg"
                       : "bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-600"
@@ -344,7 +344,7 @@ export function SymptomAnalysis() {
               value={additionalInfo}
               onChange={(e) => setAdditionalInfo(e.target.value)}
               placeholder="Any other details you'd like to share..."
-              className="w-full p-4 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 mb-6 focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+              className="w-full p-4 border border-gray-300 text-white dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 mb-6 focus:ring-2 focus:ring-pink-500 focus:border-transparent"
               rows={4}
             />
             <div className="flex justify-between">
@@ -380,7 +380,7 @@ export function SymptomAnalysis() {
             <h2 className="text-2xl font-semibold mb-4">
               Step 5: Review and Submit
             </h2>
-            <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-md">
+            <div className="bg-gray-100 text-white dark:bg-gray-700 p-4 rounded-md">
               <h3 className="font-semibold mb-2">Selected Symptoms:</h3>
               <ul className="list-disc pl-5 mb-4">
                 {selectedSymptoms.map((symptom, index) => (
@@ -419,14 +419,14 @@ export function SymptomAnalysis() {
                 whileTap={{ scale: 0.95 }}
               >
                 {isAnalyzing ? (
-                  <span className="flex items-center">
+                  <span className="flex items-center text-white">
                     <Loader2 className="animate-spin mr-2" />
                     Analyzing...
                   </span>
                 ) : (
-                  <span>
+                  <span className="text-white">
                     Submit for Analysis
-                    <ChevronRight className="inline ml-2" />
+                    <ChevronRight className="inline ml-2 text-white" />
                   </span>
                 )}
               </motion.button>

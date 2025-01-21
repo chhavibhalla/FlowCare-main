@@ -111,9 +111,11 @@ export function Dashboard() {
             throw new Error("Request timed out");
           }
           if (error.code === "ERR_BAD_REQUEST") {
-            navigate("/tracker"); console.log(error.code)
+            navigate("/tracker");
+            console.log(error.code);
             throw new Error("Period Data not found");
-          }console.log(error.code)
+          }
+          console.log(error.code);
           throw error;
         }
       };

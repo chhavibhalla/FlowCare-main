@@ -53,7 +53,7 @@ import { useNavigate } from "react-router-dom";
 const products = [
   {
     id: 1,
-    name: "Organic Cotton Pads",
+    name: <div className="text-pink-600">Organic Cotton Pads</div>,
     brand: "EcoFlow",
     price: 8.99,
     oldPrice: 10.99,
@@ -65,7 +65,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Menstrual Cup",
+    name: <div className="text-pink-600">Menstrual Cup</div>,
     brand: "LunaCup",
     price: 29.99,
     oldPrice: 34.99,
@@ -76,7 +76,7 @@ const products = [
   },
   {
     id: 3,
-    name: "Period Pain Relief Patches",
+    name: <div className="text-pink-600">Period Pain Relief Patches</div>,
     brand: "ComfortEase",
     price: 15.99,
     oldPrice: 19.99,
@@ -87,7 +87,7 @@ const products = [
   },
   {
     id: 4,
-    name: "Reusable Cloth Pads",
+    name: <div className="text-pink-600">Reusable Cloth Pads</div>,
     brand: "GreenCycle",
     price: 24.99,
     oldPrice: 29.99,
@@ -97,7 +97,7 @@ const products = [
   },
   {
     id: 5,
-    name: "Organic Tampons",
+    name: <div className="text-pink-600">Organic Tampons</div>,
     brand: "PureFlow",
     price: 7.99,
     oldPrice: 9.99,
@@ -108,7 +108,7 @@ const products = [
   },
   {
     id: 6,
-    name: "Period Tracking Bracelet",
+    name: <div className="text-pink-600">Period Tracking Bracelet</div>,
     brand: "CycleSync",
     price: 49.99,
     oldPrice: 59.99,
@@ -119,7 +119,7 @@ const products = [
   },
   {
     id: 7,
-    name: "Herbal Tea Collection",
+    name: <div className="text-pink-600">Herbal Tea Collection</div>,
     brand: "MoonBloom",
     price: 19.99,
     oldPrice: 24.99,
@@ -130,7 +130,7 @@ const products = [
   },
   {
     id: 8,
-    name: "Natural Pain Relief Pills",
+    name: <div className="text-pink-600">Natural Pain Relief Pills</div>,
     brand: "HerbalEase",
     price: 22.99,
     oldPrice: 27.99,
@@ -140,7 +140,7 @@ const products = [
   },
   {
     id: 9,
-    name: "Relaxing Bath Bombs",
+    name: <div className="text-pink-600">Relaxing Bath Bombs</div>,
     brand: "SpaFlow",
     price: 16.99,
     oldPrice: 21.99,
@@ -151,7 +151,7 @@ const products = [
   },
   {
     id: 10,
-    name: "Aromatherapy Diffuser",
+    name: <div className="text-pink-600">Aromatherapy Diffuser</div>,
     brand: "CalmScents",
     price: 39.99,
     oldPrice: 49.99,
@@ -161,45 +161,45 @@ const products = [
     isNew: true,
   },
   {
-    id : 11,
-    name: "Hot Water Bag",
+    id: 11,
+    name: <div className="text-pink-600">Hot Water Bag</div>,
     brand: "SheFort",
-    price:10.99,
-    oldPrice:12.99,
+    price: 10.99,
+    oldPrice: 12.99,
     icon: <ThermometerSun className="h-12 w-12 text-red-500" />,
-    rating:4.5,
-    category:"Pain Relief",
+    rating: 4.5,
+    category: "Pain Relief",
     isNew: true,
   },
   {
     id: 12,
-    name: "Periods Underware",
+    name: <div className="text-pink-600">Periods UnderWear</div>,
     brand: "flowDays",
     price: 5.99,
     oldPrice: 8.99,
     icon: <HandHeart className="h-12 w-12 text-pink-500" />,
-    rating:3.9,
-    category:"Tampons",
-    isNew: true
+    rating: 3.9,
+    category: "Tampons",
+    isNew: true,
   },
   {
     id: 13,
-    name: "Menstrual Disc",
+    name: <div className="text-pink-600">Menstrual Disc</div>,
     brand: "Nirvana",
     price: 12.99,
-    oldPrice: 15.00,
-    icon:<CircleDot className="h-12 w-12 text-teal-500" />,
+    oldPrice: 15.0,
+    icon: <CircleDot className="h-12 w-12 text-teal-500" />,
     rating: 4.0,
     category: "Menstrual Cups",
-    isNew: true
+    isNew: true,
   },
   {
-    id:14,
-    name: "Thero Flask",
+    id: 14,
+    name: <div className="text-pink-600">Thermo Flask</div>,
     brand: "Comfy",
     price: 20.99,
     oldPrice: 25.99,
-    icon:<GlassWater className="h-12 w-12 text-cyan-500" />,
+    icon: <GlassWater className="h-12 w-12 text-cyan-500" />,
     rating: 4.9,
     category: "Accessories",
   },
@@ -231,19 +231,19 @@ const categories = [
 
 const specialOffers = [
   {
-    title: "Summer Sale",
+    title: <div className="text-pink-600">Summer Sale</div>,
     description: "Get 20% off on all menstrual cups",
     code: "SUMMER20",
     expiry: "Limited time offer",
   },
   {
-    title: "Bundle & Save",
+    title: <div className="text-pink-600">Bundle & Save</div>,
     description: "Buy any 3 wellness products and save 15%",
     code: "WELLNESS15",
     expiry: "Valid until stocks last",
   },
   {
-    title: "First Purchase",
+    title: <div className="text-pink-600">First Purchase</div>,
     description: "10% off on your first order",
     code: "WELCOME10",
     expiry: "For new customers",
@@ -496,14 +496,14 @@ export function Ecom() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search products..."
-                className="w-full px-4 py-2 rounded-full border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-300 dark:bg-gray-700 dark:text-white"
+                className="text-white w-full px-4 py-2 rounded-full border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-300 dark:bg-gray-700 dark:text-white"
               />
-              <Search className="absolute right-3 top-2.5 h-5 w-5 text-gray-400" />
+              <Search className="text-white absolute right-3 top-2.5 h-5 w-5 text-gray-400" />
             </div>
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="px-4 py-2 rounded-full border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-300 dark:bg-gray-700 dark:text-white"
+              className="px-4 py-2 text-white rounded-full border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-300 dark:bg-gray-700 dark:text-white"
             >
               {categories.map((category) => (
                 <option key={category} value={category}>
@@ -514,7 +514,7 @@ export function Ecom() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="px-4 py-2 rounded-full border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-300 dark:bg-gray-700 dark:text-white"
+              className="px-4 py-2 text-white rounded-full border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-300 dark:bg-gray-700 dark:text-white"
             >
               <option value="featured">Featured</option>
               <option value="priceLowToHigh">Price: Low to High</option>
@@ -533,7 +533,7 @@ export function Ecom() {
 
           <section className="space-y-6">
             <div className="flex items-center justify-between">
-              <h2 className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+              <h2 className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-white">
                 Featured Products
               </h2>
               <motion.button
@@ -556,7 +556,7 @@ export function Ecom() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   whileHover={{ y: -8 }}
-                  className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700"
+                  className="dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700"
                 >
                   <motion.div
                     whileHover={{ scale: 1.05 }}
@@ -774,7 +774,7 @@ export function Ecom() {
                     className={`p-6 rounded-xl border text-center transition-colors ${
                       selectedCategory === category
                         ? "bg-gradient-to-r  from-pink-500 to-purple-600 text-black border-transparent"
-                        : "bg-white text-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:border-pink-300 dark:hover:border-pink-700"
+                        : "bg-white text-pink-600 dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:border-pink-300 dark:hover:border-pink-700"
                     }`}
                   >
                     <h3 className="font-medium">{category}</h3>
@@ -791,7 +791,7 @@ export function Ecom() {
             <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-600 opacity-10" />
             <div className="relative p-8 md:p-12">
               <div className="max-w-2xl mx-auto text-center space-y-4">
-                <h2 className="text-2xl text-white md:text-3xl font-bold">
+                <h2 className="text-2xl text-pink-600 md:text-3xl font-bold">
                   Stay Updated
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300">
