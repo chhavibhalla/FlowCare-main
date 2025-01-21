@@ -46,7 +46,7 @@ export const periodTrackingController = async (req, res) => {
     }).sort({ date: -1 });
     if (!periodTrackingData) {
       return res
-        .status(403)
+        .status(404)
         .json({ message: "No period tracking data found for this user" });
     }
 

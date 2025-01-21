@@ -40,7 +40,7 @@ import axios from "axios";
 import { PrivacyForm } from "./PrivacyForm";
 
 const server_url = import.meta.env.VITE_SERVER_URL;
-const local_url = "http://localhost:3000/period/";
+const local_url = "http://localhost:3000/api/period/";
 
 export function Dashboard() {
   const navigate = useNavigate();
@@ -110,9 +110,10 @@ export function Dashboard() {
           if (error.name === "AbortError") {
             throw new Error("Request timed out");
           }
-          if (error.code === 404) {
+          if (error.code === "ERR_BAD_REQUEST") {
+            navigate("/tracker"); console.log(error.code)
             throw new Error("Period Data not found");
-          }
+          }console.log(error.code)
           throw error;
         }
       };
@@ -140,7 +141,7 @@ export function Dashboard() {
     };
 
     fetchPeriodData();
-  });
+  }, [server_url, local_url]);
 
   useEffect(() => {
     if (darkMode) {
@@ -828,13 +829,15 @@ const AnimatedCard = ({ title, value, icon }) => {
 };
 
 const getMoodIcon = (mood) => {
-  switch (mood.toLowerCase()) {
-    case "happy":
-      return <Smile className="h-6 w-6 text-green-500" />;
-    case "sad":
-      return <Frown className="h-6 w-6 text-blue-500" />;
-    default:
-      return <Meh className="h-6 w-6 text-yellow-500" />;
+  if (typeof mood == "string") {
+    switch (mood.toLowerCase()) {
+      case "happy":
+        return <Smile className="h-6 w-6 text-green-500" />;
+      case "sad":
+        return <Frown className="h-6 w-6 text-blue-500" />;
+      default:
+        return <Meh className="h-6 w-6 text-yellow-500" />;
+    }
   }
 };
 

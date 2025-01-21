@@ -174,7 +174,7 @@ export function PeriodTracker() {
         console.warn('Primary server failed, attempting local fallback:', primaryError);
       }
       
-      const localResponse = await axios.post('http://localhost:3000/trackerdata', submissionData);
+      const localResponse = await axios.post('http://localhost:3000/api/period/trackerdata/', submissionData);
       console.log('Data submitted successfully via local server:', localResponse.data);
       setShowHealthTips(true);
       alert('Data submitted successfully!');
