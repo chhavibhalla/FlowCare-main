@@ -24,7 +24,7 @@ export function Chatbot() {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const inputRef = useRef(null);
   const messagesEndRef = useRef(null);
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     setIsDarkMode(prevMode => !prevMode);
