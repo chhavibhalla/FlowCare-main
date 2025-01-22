@@ -6,6 +6,7 @@ import {
   MapPin,
   Star,
   Clock,
+  HeartHandshake,
   DollarSign,
   ChevronDown,
   Sun,
@@ -19,6 +20,7 @@ import {
   ActivitySquare,
   Stethoscope,
   Bot,
+  Handshake ,
   ChevronRight,
   ScanHeart,
 } from "lucide-react";
@@ -116,6 +118,11 @@ export function Consultations() {
             SheSync
           </h1>
           <SidebarLink
+                      icon={<HeartHandshake size={20} />}
+                      label="ShareJoy"
+                      onClick={() => navigate("/")}
+                    />
+          <SidebarLink
             icon={<LayoutDashboard size={20} />}
             label="Dashboard"
             path="/dashboard"
@@ -156,6 +163,11 @@ export function Consultations() {
           <SidebarLink
             icon={<ScanHeart size={20} />}
             label="Nutrition & Wellness"
+            onClick={() => navigate("/")}
+          />
+          <SidebarLink
+            icon={<Handshake  size={20} />}
+            label="Ngo's"
             onClick={() => navigate("/")}
           />
         </div>

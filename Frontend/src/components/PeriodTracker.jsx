@@ -9,11 +9,13 @@ import {
   Angry,
   MessageSquare,
   Coffee,
+  HeartHandshake,
   Zap,
   Moon,
   ChevronDown,
   ChevronUp,
   Heart,
+  Handshake ,
   Sun,
   LayoutDashboard,
   Home,
@@ -373,6 +375,11 @@ export function PeriodTracker() {
               SheSync
             </h1>
             <SidebarLink
+                        icon={<HeartHandshake size={20} />}
+                        label="ShareJoy"
+                        onClick={() => navigate("/")}
+                      />
+            <SidebarLink
               icon={<LayoutDashboard size={20} />}
               label="Dashboard"
               onClick={() => navigate("/dashboard")}
@@ -423,6 +430,11 @@ export function PeriodTracker() {
               label="Nutrition & Wellness"
               onClick={() => navigate("/")}
             />
+            <SidebarLink
+                      icon={<Handshake  size={20} />}
+                      label="Ngo's"
+                      onClick={() => navigate("/")}
+                      />
           </div>
         </nav>
       </aside>

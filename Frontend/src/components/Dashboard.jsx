@@ -4,6 +4,7 @@ import {
   LayoutDashboard,
   Home,
   MessageSquare,
+  HeartHandshake,
   HeartPulse,
   GraduationCap,
   ShoppingBag,
@@ -17,6 +18,7 @@ import {
   Moon,
   Sun,
   Droplet,
+  Handshake ,
   Utensils,
   Smile,
   Frown,
@@ -356,6 +358,11 @@ export function Dashboard() {
         </h1>
         <nav className="flex-1">
           <ul className="space-y-2">
+          <NavItem
+                  icon={<HeartHandshake size={20} />}
+                  label="ShareJoy"
+                  onClick={() => navigate("/")}
+            />
             <NavItem
               icon={<LayoutDashboard size={20} />}
               label="Dashboard"
@@ -407,6 +414,11 @@ export function Dashboard() {
               label="Nutrition & Wellness"
               onClick={() => navigate("/")}
             />
+            <NavItem
+            icon={<Handshake  size={20} />}
+            label="Ngo's"
+            onClick={() => navigate("/")}
+          />
           </ul>
         </nav>
         <div className="pt-6 mt-6 border-t border-[rgba(var(--foreground),0.1)]">
