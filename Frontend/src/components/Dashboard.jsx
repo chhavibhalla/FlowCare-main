@@ -416,18 +416,18 @@ export function Dashboard() {
             />
             <NavItem
             icon={<Handshake  size={20} />}
-            label="Ngo's"
+            label="NGO's"
             onClick={() => navigate("/")}
           />
           </ul>
         </nav>
         <div className="pt-6 mt-6 border-t border-[rgba(var(--foreground),0.1)]">
           <div className="flex items-center">
-            <div className="w-8 h-8 rounded-full bg-[rgba(var(--foreground),0.1)] flex items-center justify-center text-sm font-medium">
-              UN
+            <div className="w-8 h-8 rounded-half bg-[rgba(var(--foreground),0.1)] flex items-center justify-center text-sm font-medium">
+            ☮️
             </div>
             <div className="ml-3">
-              <p className="text-sm font-medium">User Name</p>
+              <p className="text-sm font-medium">SheSync🎗️</p>
               <p className="text-xs text-[rgba(var(--foreground),0.6)]">
                 Premium Member
               </p>

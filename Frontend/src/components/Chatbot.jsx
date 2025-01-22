@@ -226,7 +226,7 @@ export function Chatbot() {
             <SidebarLink icon={<HeartPulse size={20} />} label="HealthLens" onClick={() => navigate('/symptomsanalyzer')} />
             <SidebarLink icon={<MessageSquare size={20} />} label="Forums" onClick={() => navigate('/forums')}  />
             <SidebarLink icon={<ScanHeart size={20} />} label="Nutrition&Wellness" onClick={() => navigate('/nutrition')} />
-            <SidebarLink icon={<Handshake  size={20} />} label="Ngo's" onClick={() => navigate('/')} />
+            <SidebarLink icon={<Handshake  size={20} />} label="NGO's" onClick={() => navigate('/')} />
           </div>
         </nav>
       </aside>

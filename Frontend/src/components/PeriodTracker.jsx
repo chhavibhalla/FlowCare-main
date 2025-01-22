@@ -432,7 +432,7 @@ export function PeriodTracker() {
             />
             <SidebarLink
                       icon={<Handshake  size={20} />}
-                      label="Ngo's"
+                      label="NGO's"
                       onClick={() => navigate("/")}
                       />
           </div>
