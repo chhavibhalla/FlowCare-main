@@ -358,15 +358,15 @@ export function Dashboard() {
         </h1>
         <nav className="flex-1">
           <ul className="space-y-2">
+          <NavItem
+                  icon={<HeartHandshake size={20} />}
+                  label="ShareJoy"
+                  onClick={() => navigate("/")}
+            />
             <NavItem
               icon={<LayoutDashboard size={20} />}
               label="Dashboard"
               onClick={() => navigate("/dashboard")}
-            />
-            <NavItem
-                  icon={<HeartHandshake size={20} />}
-                  label="ShareJoy"
-                  onClick={() => navigate("/")}
             />
             <NavItem
               icon={<Home size={20} />}

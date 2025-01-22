@@ -215,6 +215,7 @@ export function Chatbot() {
       <nav className="mt-8">
           <div className="px-4 py-4 flex flex-col space-y-2">
             <h1 className="text-2xl font-bold text-pink-600 dark:text-pink-400 mb-4">SheSync</h1>
+            <SidebarLink icon={<HeartHandshake size={20} />} label="ShareJoy" onClick={() => navigate('/')} />
             <SidebarLink icon={<LayoutDashboard size={20} />} label="Dashboard" onClick={() => navigate('/dashboard')} />
             <SidebarLink icon={<Home size={20} />} label="Home" onClick={() => navigate('/')} />
             <SidebarLink icon={<GraduationCap size={20} />} label="Education" onClick={() => navigate('/blogs')} />
