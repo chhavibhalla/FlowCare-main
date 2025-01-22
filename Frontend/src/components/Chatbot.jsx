@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import { Send, Moon, Sun, Home, Trash2, LayoutDashboard,ActivitySquare, Loader,GraduationCap, Bot,MessageSquare, HeartPulse, Paperclip, Smile, Volume2, VolumeX, HelpCircle, BookOpen, ShoppingBag, Activity, Stethoscope, MessageCircle, ScanHeart } from 'lucide-react';
+import { Send, Moon, Sun, Home, Trash2, LayoutDashboard,ActivitySquare, Loader,GraduationCap, Bot,MessageSquare, HeartPulse, Paperclip, Smile, Volume2, VolumeX, HelpCircle, BookOpen, ShoppingBag, Activity, Stethoscope, MessageCircle, ScanHeart,Handshake, HeartHandshake } from 'lucide-react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
@@ -224,7 +224,8 @@ export function Chatbot() {
             <SidebarLink icon={<Bot size={20} />} label="Eve" onClick={() => navigate('/ChatBot')} active/>
             <SidebarLink icon={<HeartPulse size={20} />} label="HealthLens" onClick={() => navigate('/symptomsanalyzer')} />
             <SidebarLink icon={<MessageSquare size={20} />} label="Forums" onClick={() => navigate('/forums')}  />
-            <SidebarLink icon={<ScanHeart size={20} />} label="Nutrition&Wellness" onClick={() => navigate('/')} />
+            <SidebarLink icon={<ScanHeart size={20} />} label="Nutrition&Wellness" onClick={() => navigate('/nutrition')} />
+            <SidebarLink icon={<Handshake  size={20} />} label="Ngo's" onClick={() => navigate('/')} />
           </div>
         </nav>
       </aside>

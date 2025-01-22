@@ -8,12 +8,14 @@ import {
   ThumbsUp,
   AlertCircle,
   ChevronRight,
+  HeartHandshake,
   Loader2,
   CheckCircle,
   Sun,
   Moon,
   ArrowLeft,
   Plus,
+  Handshake ,
   ScanHeart,
   Minus,
   Info,
@@ -555,6 +557,11 @@ export function SymptomAnalysis() {
             SheSync
           </h1>
           <SidebarLink
+                      icon={<HeartHandshake size={20} />}
+                      label="ShareJoy"
+                      onClick={() => navigate("/")}
+                    />
+          <SidebarLink
             icon={<LayoutDashboard size={20} />}
             label="Dashboard"
             onClick={() => navigate("/dashboard")}
@@ -604,6 +611,11 @@ export function SymptomAnalysis() {
             label="Nutrition & Wellness"
             onClick={() => navigate("/")}
           />
+          <SidebarLink
+                      icon={<Handshake  size={20} />}
+                      label="Ngo's"
+                      onClick={() => navigate("/")}
+                    />
         </div>
       </aside>
 

@@ -15,6 +15,8 @@ import {
   Calendar,
   Heart,
   Moon,
+  Handshake,
+  HeartHandshake,
   Sun,
   Droplet,
   Utensils,
@@ -70,6 +72,11 @@ export function Landing() {
             SheSync
           </h1>
           <SidebarLink
+                      icon={<HeartHandshake size={20} />}
+                      label="ShareJoy"
+                      onClick={() => navigate("/")}
+                    />
+          <SidebarLink
             icon={<LayoutDashboard size={20} />}
             label="Dashboard"
             onClick={() => navigate("/dashboard")}
@@ -117,6 +124,11 @@ export function Landing() {
           <SidebarLink
             icon={<ScanHeart size={20} />}
             label="Nutrition & Wellness"
+            onClick={() => navigate("/")}
+          />
+          <SidebarLink
+            icon={<Handshake  size={20} />}
+            label="Ngo's"
             onClick={() => navigate("/")}
           />
         </div>

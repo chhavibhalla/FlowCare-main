@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LayoutDashboard, HeartPulse, Home, GraduationCap, ShoppingBag, ActivitySquare, Stethoscope, Bot, ChevronRight, Calendar, Heart, Moon, Sun, Users, MessageSquare, Search, Filter, TrendingUp,ScanHeart } from 'lucide-react';
+import { LayoutDashboard, HeartPulse, Home, GraduationCap, ShoppingBag, ActivitySquare, Stethoscope, Bot, ChevronRight, Calendar, Heart, Moon, Sun, Users, MessageSquare, Search, Filter, TrendingUp, ScanHeart, Handshake, HeartHandshake   } from 'lucide-react';
 
 export function Forum() {
   const navigate = useNavigate();
@@ -72,6 +72,7 @@ export function Forum() {
             <SidebarLink icon={<HeartPulse size={20} />} label="HealthLens" onClick={() => navigate('/symptomsanalyzer')} />
             <SidebarLink icon={<MessageSquare size={20} />} label="Forums" onClick={() => navigate('/forums')} active />
             <SidebarLink icon={<ScanHeart size={20} />} label="Nutrition & Wellness" onClick={() => navigate('/')} />
+            <SidebarLink icon={<Handshake  size={20} />} label="Ngo's" onClick={() => navigate('/')} />
           </div>
         </nav>
       </aside>
