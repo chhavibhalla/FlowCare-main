@@ -36,7 +36,6 @@ import {
   Lock,
   Unlock,
   AlertTriangle,
-  ScanHeart,
 } from "lucide-react";
 import axios from "axios";
 import { PrivacyForm } from "./PrivacyForm";
@@ -358,11 +357,6 @@ export function Dashboard() {
         </h1>
         <nav className="flex-1">
           <ul className="space-y-2">
-          <NavItem
-                  icon={<HeartHandshake size={20} />}
-                  label="ShareJoy"
-                  onClick={() => navigate("/")}
-            />
             <NavItem
               icon={<LayoutDashboard size={20} />}
               label="Dashboard"
@@ -410,8 +404,8 @@ export function Dashboard() {
               active
             />
             <NavItem
-              icon={<ScanHeart size={20} />}
-              label="Nutrition & Wellness"
+              icon={<HeartHandshake size={20} />}
+              label="ShareJoy"
               onClick={() => navigate("/")}
             />
             <NavItem

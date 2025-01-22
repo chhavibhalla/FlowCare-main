@@ -15,7 +15,6 @@ import {
   ChevronDown,
   ChevronUp,
   Heart,
-  ScanHeart,
   Sun,
   LayoutDashboard,
   Home,
@@ -298,11 +297,6 @@ export function Blogs() {
             SheSync
           </h1>
           <SidebarLink
-            icon={<HeartHandshake size={20} />}
-            label="ShareJoy"
-            onClick={() => navigate("/")}
-          />
-          <SidebarLink
             icon={<LayoutDashboard size={20} />}
             label="Dashboard"
             onClick={() => navigate("/dashboard")}
@@ -349,9 +343,9 @@ export function Blogs() {
             onClick={() => navigate("/forums")}
           />
           <SidebarLink
-            icon={<ScanHeart size={20} />}
-            label="Nutrition & Wellness"
-            onClick={() => navigate("/nutrition")}
+            icon={<HeartHandshake size={20} />}
+            label="ShareJoy"
+            onClick={() => navigate("/")}
             active
           />
           <SidebarLink

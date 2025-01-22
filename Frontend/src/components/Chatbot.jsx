@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import { Send, Moon, Sun, Home, Trash2, LayoutDashboard,ActivitySquare, Loader,GraduationCap, Bot,MessageSquare, HeartPulse, Paperclip, Smile, Volume2, VolumeX, HelpCircle, BookOpen, ShoppingBag, Activity, Stethoscope, MessageCircle, ScanHeart,Handshake, HeartHandshake } from 'lucide-react';
+import { Send, Moon, Sun, Home, Trash2, LayoutDashboard,ActivitySquare, Loader,GraduationCap, Bot,MessageSquare, HeartPulse, Paperclip, Smile, Volume2, VolumeX, HelpCircle, BookOpen, ShoppingBag, Activity, Stethoscope, MessageCircle, HeartHandshake,Handshake,} from 'lucide-react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
@@ -215,7 +215,6 @@ export function Chatbot() {
       <nav className="mt-8">
           <div className="px-4 py-4 flex flex-col space-y-2">
             <h1 className="text-2xl font-bold text-pink-600 dark:text-pink-400 mb-4">SheSync</h1>
-            <SidebarLink icon={<HeartHandshake size={20} />} label="ShareJoy" onClick={() => navigate('/')} />
             <SidebarLink icon={<LayoutDashboard size={20} />} label="Dashboard" onClick={() => navigate('/dashboard')} />
             <SidebarLink icon={<Home size={20} />} label="Home" onClick={() => navigate('/')} />
             <SidebarLink icon={<GraduationCap size={20} />} label="Education" onClick={() => navigate('/blogs')} />
@@ -225,7 +224,7 @@ export function Chatbot() {
             <SidebarLink icon={<Bot size={20} />} label="Eve" onClick={() => navigate('/ChatBot')} active/>
             <SidebarLink icon={<HeartPulse size={20} />} label="HealthLens" onClick={() => navigate('/symptomsanalyzer')} />
             <SidebarLink icon={<MessageSquare size={20} />} label="Forums" onClick={() => navigate('/forums')}  />
-            <SidebarLink icon={<ScanHeart size={20} />} label="Nutrition&Wellness" onClick={() => navigate('/nutrition')} />
+            <SidebarLink icon={<HeartHandshake size={20} />} label="ShareJoy" onClick={() => navigate('/')} />
             <SidebarLink icon={<Handshake  size={20} />} label="NGO's" onClick={() => navigate('/')} />
           </div>
         </nav>

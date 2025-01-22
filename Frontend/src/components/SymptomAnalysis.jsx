@@ -16,7 +16,6 @@ import {
   ArrowLeft,
   Plus,
   Handshake ,
-  ScanHeart,
   Minus,
   Info,
   LayoutDashboard,
@@ -557,11 +556,6 @@ export function SymptomAnalysis() {
             SheSync
           </h1>
           <SidebarLink
-                      icon={<HeartHandshake size={20} />}
-                      label="ShareJoy"
-                      onClick={() => navigate("/")}
-                    />
-          <SidebarLink
             icon={<LayoutDashboard size={20} />}
             label="Dashboard"
             onClick={() => navigate("/dashboard")}
@@ -607,8 +601,8 @@ export function SymptomAnalysis() {
             onClick={() => navigate("/forums")}
           />
           <SidebarLink
-            icon={<ScanHeart size={20} />}
-            label="Nutrition & Wellness"
+            icon={<HeartHandshake size={20} />}
+            label="ShareJoy"
             onClick={() => navigate("/")}
           />
           <SidebarLink

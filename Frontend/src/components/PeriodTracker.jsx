@@ -24,7 +24,6 @@ import {
   ActivitySquare,
   Stethoscope,
   Bot,
-  ScanHeart,
 } from "lucide-react";
 import axios from "axios";
 
@@ -375,11 +374,6 @@ export function PeriodTracker() {
               SheSync
             </h1>
             <SidebarLink
-                        icon={<HeartHandshake size={20} />}
-                        label="ShareJoy"
-                        onClick={() => navigate("/")}
-                      />
-            <SidebarLink
               icon={<LayoutDashboard size={20} />}
               label="Dashboard"
               onClick={() => navigate("/dashboard")}
@@ -426,8 +420,8 @@ export function PeriodTracker() {
               onClick={() => navigate("/forums")}
             />
             <SidebarLink
-              icon={<ScanHeart size={20} />}
-              label="Nutrition & Wellness"
+              icon={<HeartHandshake size={20} />}
+              label="ShareJoy"
               onClick={() => navigate("/")}
             />
             <SidebarLink

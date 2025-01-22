@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LayoutDashboard, HeartPulse, Home, GraduationCap, ShoppingBag, ActivitySquare, Stethoscope, Bot, ChevronRight, Calendar, Heart, Moon, Sun, Users, MessageSquare, Search, Filter, TrendingUp, ScanHeart, Handshake, HeartHandshake   } from 'lucide-react';
+import { LayoutDashboard, HeartPulse, Home, GraduationCap, ShoppingBag, ActivitySquare, Stethoscope, Bot, ChevronRight, Calendar, Heart, Moon, Sun, Users, MessageSquare, Search, Filter, TrendingUp, HeartHandshake, Handshake,  } from 'lucide-react';
 
 export function Forum() {
   const navigate = useNavigate();
@@ -62,7 +62,6 @@ export function Forum() {
         <nav className="mt-8">
           <div className="px-4 py-4 flex flex-col space-y-2">
             <h1 className="text-2xl font-bold text-pink-600 dark:text-pink-400 mb-4">SheSync</h1>
-            <SidebarLink icon={<HeartHandshake size={20} />} label="ShareJoy" onClick={() => navigate('/')} />
             <SidebarLink icon={<LayoutDashboard size={20} />} label="Dashboard" onClick={() => navigate('/dashboard')} />
             <SidebarLink icon={<Home size={20} />} label="Home" onClick={() => navigate('/')} />
             <SidebarLink icon={<GraduationCap size={20} />} label="Education" onClick={() => navigate('/blogs')} />
@@ -72,7 +71,7 @@ export function Forum() {
             <SidebarLink icon={<Bot size={20} />} label="Eve" onClick={() => navigate('/ChatBot')} />
             <SidebarLink icon={<HeartPulse size={20} />} label="HealthLens" onClick={() => navigate('/symptomsanalyzer')} />
             <SidebarLink icon={<MessageSquare size={20} />} label="Forums" onClick={() => navigate('/forums')} active />
-            <SidebarLink icon={<ScanHeart size={20} />} label="Nutrition & Wellness" onClick={() => navigate('/')} />
+            <SidebarLink icon={<HeartHandshake size={20} />} label="ShareJoy" onClick={() => navigate('/')} />
             <SidebarLink icon={<Handshake  size={20} />} label="NGO's" onClick={() => navigate('/')} />
           </div>
         </nav>

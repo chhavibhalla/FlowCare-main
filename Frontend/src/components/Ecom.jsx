@@ -17,7 +17,6 @@ import {
   ShoppingBag,
   Activity,
   Stethoscope,
-  ScanHeart,
   MessageCircle,
   Sun,
   Moon,
@@ -391,11 +390,6 @@ export function Ecom() {
             SheSync
           </h1>
           <SidebarLink
-                      icon={<HeartHandshake size={20} />}
-                      label="ShareJoy"
-                      onClick={() => navigate("/")}
-                    />
-          <SidebarLink
             icon={<LayoutDashboard size={20} />}
             label="Dashboard"
             onClick={() => navigate("/dashboard")}
@@ -442,8 +436,8 @@ export function Ecom() {
             onClick={() => navigate("/forums")}
           />
           <SidebarLink
-            icon={<ScanHeart size={20} />}
-            label="Nutrition & Wellness"
+            icon={<HeartHandshake size={20} />}
+            label="ShareJoy"
             onClick={() => navigate("/")}
           />
           <SidebarLink

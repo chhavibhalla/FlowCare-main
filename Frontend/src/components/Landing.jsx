@@ -10,13 +10,12 @@ import {
   ActivitySquare,
   Stethoscope,
   Bot,
-  ScanHeart,
+  HeartHandshake,
   ChevronRight,
   Calendar,
   Heart,
   Moon,
   Handshake,
-  HeartHandshake,
   Sun,
   Droplet,
   Utensils,
@@ -75,11 +74,6 @@ export function Landing() {
             SheSync
           </h1>
           <SidebarLink
-                      icon={<HeartHandshake size={20} />}
-                      label="ShareJoy"
-                      onClick={() => navigate("/")}
-                    />
-          <SidebarLink
             icon={<LayoutDashboard size={20} />}
             label="Dashboard"
             onClick={() => navigate("/dashboard")}
@@ -125,8 +119,8 @@ export function Landing() {
             onClick={() => navigate("/forums")}
           />
           <SidebarLink
-            icon={<ScanHeart size={20} />}
-            label="Nutrition & Wellness"
+            icon={<HeartHandshake size={20} />}
+            label="ShareJoy"
             onClick={() => navigate("/")}
           />
           <SidebarLink
@@ -302,10 +296,10 @@ export function Landing() {
         className="text-lg font-semibold text-pink-600 cursor-pointer  hover:bg-pink-200 active:bg-pink-100 focus:outline-none focus:ring focus:ring-pink-300 ..."
         onClick={() => (window.location.href = "/ChatBot")}
       >
-        Personalized AI-Powered Assistant
+        Eve
       </h4>
       <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
-        Get personalized insights, symptom analysis, and timely reminders
+        Get AI personalized insights, symptom analysis, and timely reminders
         tailored to your unique menstrual health needs.
       </p>
     </div>
@@ -355,19 +349,6 @@ export function Landing() {
       <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
         A safe, anonymous space for peer support, discussions, and expert Q&A on
         menstrual health and related topics.
-      </p>
-    </div>
-    <div className="flex flex-col items-start p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
-    >
-      <ScanHeart className="h-8 w-8 text-pink-600 dark:text-pink-400 mb-4" />
-      <h4
-        className="text-lg font-semibold text-pink-600 cursor-pointer  hover:bg-pink-200 active:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-300 ..."
-        onClick={() => (window.location.href = "/forums")}
-      >
-        Nutrition & Wellness
-      </h4>
-      <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
-      Explore essential tips and guidance on maintaining nutrition and wellness during your menstrual cycle, including insights into managing PCOS and PCOD effectively. Stay healthy and balanced throughout every phase.
       </p>
     </div>
     <div className="flex flex-col items-start p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg"

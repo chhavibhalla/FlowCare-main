@@ -22,7 +22,6 @@ import {
   Bot,
   Handshake ,
   ChevronRight,
-  ScanHeart,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -213,11 +212,6 @@ export function Consultations() {
             SheSync
           </h1>
           <SidebarLink
-                      icon={<HeartHandshake size={20} />}
-                      label="ShareJoy"
-                      onClick={() => navigate("/")}
-                    />
-          <SidebarLink
             icon={<LayoutDashboard size={20} />}
             label="Dashboard"
             path="/dashboard"
@@ -256,8 +250,8 @@ export function Consultations() {
             path="/forums"
           />
           <SidebarLink
-            icon={<ScanHeart size={20} />}
-            label="Nutrition & Wellness"
+            icon={<HeartHandshake size={20} />}
+            label="ShareJoy"
             onClick={() => navigate("/")}
           />
           <SidebarLink
