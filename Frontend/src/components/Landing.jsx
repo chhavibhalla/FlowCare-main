@@ -359,12 +359,12 @@ export function Landing() {
     </div>
     <div className="flex flex-col items-start p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
     >
-      <CalendarHeart className="h-8 w-8 text-pink-600 dark:text-pink-400 mb-4" />
+      <ScanHeart className="h-8 w-8 text-pink-600 dark:text-pink-400 mb-4" />
       <h4
-        className="text-lg font-semibold text-pink-600 cursor-pointer hover:underline"
+        className="text-lg font-semibold text-pink-600 cursor-pointer  hover:bg-pink-200 active:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-300 ..."
         onClick={() => (window.location.href = "/forums")}
       >
-        Nutrition and Wellness
+        Nutrition & Wellness
       </h4>
       <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
       Explore essential tips and guidance on maintaining nutrition and wellness during your menstrual cycle, including insights into managing PCOS and PCOD effectively. Stay healthy and balanced throughout every phase.
@@ -372,28 +372,28 @@ export function Landing() {
     </div>
     <div className="flex flex-col items-start p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
     >
-      <Church className="h-8 w-8 text-pink-600 dark:text-pink-400 mb-4" />
+      <Handshake className="h-8 w-8 text-pink-600 dark:text-pink-400 mb-4" />
       <h4
-        className="text-lg font-semibold text-pink-600 cursor-pointer hover:underline"
+        className="text-lg font-semibold text-pink-600 cursor-pointer  hover:bg-pink-200 active:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-300 ..."
         onClick={() => (window.location.href = "/forums")}
       >
-        NGOs
+        NGO's
       </h4>
       <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
       Discover and connect with NGOs dedicated to women’s health, empowerment, and well-being. Together, we can build a supportive community for women everywhere.
       </p>
-    </div>
+    </div> 
     <div className="flex flex-col items-start p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
     >
-      <Package className="h-8 w-8 text-pink-600 dark:text-pink-400 mb-4" />
+      <HeartHandshake className="h-8 w-8 text-pink-600 dark:text-pink-400 mb-4" />
       <h4
-        className="text-lg font-semibold text-pink-600 cursor-pointer hover:underline"
+        className="text-lg font-semibold text-pink-600 cursor-pointer  hover:bg-pink-200 active:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-300 ..."
         onClick={() => (window.location.href = "/forums")}
       >
       ShareJoy
       </h4>
       <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
-      Make a difference by donating sanitary pads through our curated platform, ensuring access to menstrual hygiene for those in need. Sharing joy starts here!
+      Make a difference by donating sanitary pads through our curated platform, ensuring access to menstrual hygiene for those in need. Sharing joy starts here!
       </p>
     </div>
   </div>
